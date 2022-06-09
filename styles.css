@@ -1,0 +1,362 @@
+/*
+CSS STYLE SHEET FOR MY DESIGN STYLES. This sheet is 1 part of a webpage I designed for my Codecademy Challenge Project: Build a Website Design System. Feel free to use any or all of this style guide in your own projects. 
+*/
+
+/*
+Reset - minimal style reset=======================
+*/
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-size: 16px;
+  color: #4C5769;
+}
+
+/*Global==========*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #012E40;
+}
+
+.wrap {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Arvo', serif;
+  font-weight: 700;
+  color: #024959;
+  
+}
+
+ul{
+  margin: 0 auto;
+  padding:0;
+}
+
+ul li {
+  font-family: 'Arvo', serif;
+  list-style-type: none;
+}
+
+a {
+  color: #377F9A;
+}
+
+a:visited {
+  color: #BF5100;
+}
+
+a:hover {
+  color: #3CA6A6;
+}
+
+a:focus {
+  outline: none;
+}
+
+a:active {
+  color: #024959;
+}
+
+/*Non-Specific Styles==========*/
+
+.lt-text {
+  color: #F2E3D5;
+}
+
+.drk-text {
+  color: #012E40;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.clean {
+  padding: 0;
+  margin: 0 auto;
+}
+
+/*Wrap==========*/
+
+
+/*Nav==========*/
+nav {
+  background-color: #3CA6A6;
+}
+
+.menu li{
+  display: inline;
+  position: relative;
+  float: right;
+  padding-right: 10px;
+}
+
+.navbar .menu li a{
+  color: #F2E3D5;
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+  
+}
+
+.brandName p{
+  font-family: 'Arvo', serif;
+  font-weight: 700;
+  color: #024959;
+  
+}
+
+/*Header==========*/
+header {
+  padding: 0 25px;
+}
+.site-headr {
+  color: #F2E3D5;
+}
+
+.site-desc {
+  color: #F2E3D5;
+  font-weight: 400;
+}
+
+/*Sidebar==========*/
+#sidebar {
+  position: relative;
+  background-color: #026773;
+  height: 100%;
+  overflow: hidden;
+  color: #F2E3D5;
+  margin: 0;
+  padding: 0;
+}
+
+.sidenav h1 {
+  color: #F2E3D5;
+  margin-left: 25px;
+}
+
+.sidenav ul{
+  list-style-type: none;
+  margin: 0;
+  padding:0; 
+  border-top: 2px solid #F2E3D5;
+}
+
+.sidenav ul li {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 25px;
+}
+
+.sidenav ul li a {
+  display: block;
+  color: #F2E3D5;
+  text-decoration: none;
+}
+
+.sidenav ul li a:visited {
+  color: #F2E3D5;
+}
+.sidebar ul li:hover {
+  background-color: #F2B13F;
+}
+.sidenav ul li:hover {
+  color: #F2B13F;
+  border-bottom:  1px solid #F2B13F;
+  background-color: #024959;
+}
+
+.sidenav ul li a:hover {
+  color: #F2B13F;
+}
+
+.sidenav ul li a:active {
+  color: #012E40;
+}
+
+/*Main==========*/
+#primary {
+  position: relative;
+  background-color: #F2E3D5;
+  overflow: hidden;
+  padding: 0 25px;
+  border-left: 1px dashed #026773;
+}
+
+
+
+.section-border {
+  border: 1px solid #012E40;
+  border-radius: 5px;
+  padding: 5px;
+  overflow: hidden;
+}
+
+
+/* Subheading -- Brand Colors*/
+#colorProps {
+  position: relative;
+  width: 100%;
+  clear: both;
+  overflow: hidden;
+}
+
+/* Subheading -- Links*/
+
+#links .listLinks li{
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+#links .listLinks {
+  padding: 0
+}
+
+.darktbl {
+  background-color: #012E40;
+}
+
+.alink {
+  color: #3772B3;
+  font-weight: bold;
+}
+
+.alink-drk{
+  color: #3CA6A6;
+  font-weight: bold;
+}
+
+.avisited {
+  color: #BF5100;
+  font-weight: bold;
+}
+
+.ahover {
+  color: #3CA6A6;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.ahover-drk {
+  color: #F2B13F;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.afocus {
+  color: #377F9A;
+  font-weight: bold;
+  outline: 1px dotted #3CA6A6;
+}
+
+.aactive {
+  color: #026773;
+  font-weight: 700;
+}
+
+#resources {
+  background-color: #3CA6A6;
+}
+
+/*Footer*/
+#foot-main{
+  min-height: 150px;
+}
+
+
+
+/*Responsive Grid*/
+
+* {
+  box-sizing: border-box;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+.colorset {
+  display: inline;
+  float:left;
+  position: relative; 
+  width: 20%;
+  color: #FFF;
+  text-align: center;
+}
+
+/*Brand Colors*/
+
+.deepTeal {
+  background-color: #012E40;
+}
+
+.oceanTeal {
+  background-color: #024959;
+}
+
+ .medTeal {
+  background-color: #026773;
+}
+
+.liteTeal {
+   background-color: #3CA6A6;
+}
+
+.daySand {
+  background-color: #F2E3D5;
+  color: #012E40;
+}
+
+.yelocher {
+  background-color: #F2B13F;
+}
+
+.burntumber {
+  background-color: #BF5100;
+}
+
+.froth {
+  background-color: #377F9A;
+}
+
+.coolgray {
+  background-color: #4C5769;
+}
+
+.mustard {
+  background-color: #B3822E;
+}
+
+#wrap {
+  padding: 0;
+  margin: 0
+}
+
+/*-* {
+  outline: 1px dotted red;
+}
+-*/
