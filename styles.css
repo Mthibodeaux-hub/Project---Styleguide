@@ -13,6 +13,7 @@ body {
   color: #4C5769;
 }
 
+
 /*Global==========*/
 
 html {
@@ -39,13 +40,21 @@ h1, h2, h3, h4, h5, h6 {
   
 }
 
+h1 {
+  font-size: 29px;
+}
+
+h4, h5, h6 {
+  font-family: 'Lato', sans-serif;
+}
+
 ul{
+  font-family: 'Lato', sans-serif;
   margin: 0 auto;
   padding:0;
 }
 
 ul li {
-  font-family: 'Arvo', serif;
   list-style-type: none;
 }
 
@@ -66,30 +75,8 @@ a:focus {
 }
 
 a:active {
-  color: #024959;
+  color: #026773;
 }
-
-/*Non-Specific Styles==========*/
-
-.lt-text {
-  color: #F2E3D5;
-}
-
-.drk-text {
-  color: #012E40;
-}
-
-.bold {
-  font-weight: 700;
-}
-
-.clean {
-  padding: 0;
-  margin: 0 auto;
-}
-
-/*Wrap==========*/
-
 
 /*Nav==========*/
 nav {
@@ -117,12 +104,14 @@ nav {
   
 }
 
+
 /*Header==========*/
 header {
   padding: 0 25px;
 }
 .site-headr {
   color: #F2E3D5;
+  font-size: 2.5em;
 }
 
 .site-desc {
@@ -185,6 +174,7 @@ header {
   color: #012E40;
 }
 
+
 /*Main==========*/
 #primary {
   position: relative;
@@ -193,8 +183,6 @@ header {
   padding: 0 25px;
   border-left: 1px dashed #026773;
 }
-
-
 
 .section-border {
   border: 1px solid #012E40;
@@ -205,12 +193,67 @@ header {
 
 
 /* Subheading -- Brand Colors*/
+
+.colorset {
+  display: inline;
+  float:left;
+  position: relative; 
+  width: 20%;
+  color: #FFF;
+  text-align: center;
+}
+
+
+/*Brand Colors*/
+
+.deepTeal {
+  background-color: #012E40;
+}
+
+.oceanTeal {
+  background-color: #024959;
+}
+
+ .medTeal {
+  background-color: #026773;
+}
+
+.liteTeal {
+   background-color: #3CA6A6;
+}
+
+.daySand {
+  background-color: #F2E3D5;
+  color: #012E40;
+}
+
+.yelocher {
+  background-color: #F2B13F;
+}
+
+.burntumber {
+  background-color: #BF5100;
+}
+
+.froth {
+  background-color: #377F9A;
+}
+
+.coolgray {
+  background-color: #4C5769;
+}
+
+.mustard {
+  background-color: #B3822E;
+}
+
 #colorProps {
   position: relative;
   width: 100%;
   clear: both;
   overflow: hidden;
 }
+
 
 /* Subheading -- Links*/
 
@@ -257,6 +300,12 @@ header {
 .afocus {
   color: #377F9A;
   font-weight: bold;
+  outline: 1px dotted #377F9A;
+}
+
+.afocus-drk{
+  color: #3CA6A6;
+  font-weight: bold;
   outline: 1px dotted #3CA6A6;
 }
 
@@ -273,7 +322,6 @@ header {
 #foot-main{
   min-height: 150px;
 }
-
 
 
 /*Responsive Grid*/
@@ -299,61 +347,91 @@ header {
   float: left;
   padding: 15px;
 }
-.colorset {
-  display: inline;
-  float:left;
-  position: relative; 
-  width: 20%;
-  color: #FFF;
-  text-align: center;
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
 }
 
-/*Brand Colors*/
 
-.deepTeal {
-  background-color: #012E40;
-}
-
-.oceanTeal {
-  background-color: #024959;
-}
-
- .medTeal {
-  background-color: #026773;
-}
-
-.liteTeal {
-   background-color: #3CA6A6;
-}
-
-.daySand {
-  background-color: #F2E3D5;
-  color: #012E40;
-}
-
-.yelocher {
-  background-color: #F2B13F;
-}
-
-.burntumber {
-  background-color: #BF5100;
-}
-
-.froth {
-  background-color: #377F9A;
-}
-
-.coolgray {
-  background-color: #4C5769;
-}
-
-.mustard {
-  background-color: #B3822E;
-}
-
+/*Wrap==========*/
 #wrap {
   padding: 0;
   margin: 0
+}
+
+/*Non-Specific Styles==========*/
+
+.lt-text {
+  color: #F2E3D5;
+}
+
+.drk-text {
+  color: #012E40;
+}
+
+.yel-text {
+  color: #F2B13F;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.clean {
+  padding: 0;
+  margin: 0 auto;
+}
+
+.card {
+  position: relative;
+  background-color: #026773;
+  border-radius: 5px;
+  width: 50%;
+  padding: 10px;
+  margin: 5px;
+  color: #F2E3D5;
+}
+
+.center {
+  text-align: center;
+}
+
+.large {
+  font-size: 1.75em;
+}
+
+.classy {
+  font-family: 'Arvo', serif;
+}
+
+.thin {
+  font-weight: 100;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.italic {
+   font-style: italic;
+}
+
+/*
+Media Queries for Responsive Design
+==========*/
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+    #sidebar {
+        display: none;
+    }
+    .colorset {
+        width: 50%; 
+
+}
+
 }
 
 /*-* {
