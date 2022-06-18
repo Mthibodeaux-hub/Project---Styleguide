@@ -4,267 +4,366 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400&family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,700,0,0" />
 </head>
 <body>
-  <div id="wrap" class="col-12">
+  <div id="wrap">
+      <div id="inner-wrap">
+<!--Nav-->
+            <nav class="col-12" id="menu-main">
+                <div class="topnav" id="myTopnav">
+                    <a href="index.html" class="active">My Design Styleguide</a>
+                    <a href="#about">What It Is</a>
+                    <a href="#resources">Resources</a>
+                    <a href="#social">Join Me</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                      <i class="fa fa-bars"></i>
+                    </a>
+                  </div>
+            </nav>
+<!--Header-->
+            <header class="col-12" id="brand">
+                <h1 class="site-headr fade-in-text">My Design System </h1>
+                <h2 class="site-desc fade-in-text">Design to create simple, intuitive and beautiful experiences.</h2>
+            </header>
+<!--Sidebar-->
+            <aside class="col-2 sidenav" id="sidebar">
+                <h1>Contents</h1>
+                <ul class="sidebuttons">
+                <li><a href="#colorProps">Colors</a></li>
+                <li><a href="#links">Links</a></li>
+                <li><a href="#fonts">Typography</a></li>
+                <li><a href="#headings">Heading/Paragraph Styles</a></li>
+                <li><a href="#icons">Icons</a></li>
+                <li><a href="#buttons">Buttons</a></li>
+                <li><a href="#images">Images</a></li>
+                </ul>
+            </aside>
+<!--Main-->
+            <main class="col-10" id="primary">
+  <!--First Section Colors-->
+                <section id="colorProps">
+                  <h1>Colors</h1>
+                  <p>When used strategically, color is a powerful tool for communicating a brand's message and creating brand recognition. The colors below represent the sites theme and functionality.</p>
 
-      <nav class="col-12" id="menu-main">
-        <div class="brandName col-4"><p>My Design System</p></div>
-        <div class="navbar col-8">        
-        <ul class="menu">
-          <li><a href="#sources">SOURCES</a></li>
-          <li><a href="#resources">RESOURCES</a></li>
-          <li><a href="#colors">ABOUT</a></li>
-        </ul>
-        </div>
-      </nav>
+                <div class="section-border">
 
-      <header class="col-12" id="brand">
-        <h1 class="site-headr">My Design System </h1>
-        <h2 class="site-desc">Design to create simple, intuitive and beautiful experiences.</h2>
-      </header>
+                    <div id="colors">
+                        <div class="colorset deepTeal"><p>Deep Teal <br>#012E40</p></div>
+                        <div class="colorset oceanTeal"><p>Ocean <br>#024959</p></div>
+                        <div class="colorset medTeal"><p>Medium Teal <br>#026773</p></div>
+                        <div class="colorset liteTeal"><p>Lite Teal <br>#3CA6A6</p></div>
+                        <div class="colorset daySand"><p>Day Sand <br>#F2E3D5</p></div>
+                        </div>
+                        <div id="alertColors">
+                        <div class="colorset yelocher"><p>Yellow Ocher <br>#F2B13F</p></div>
+                        <div class="colorset burntumber"><p>Burnt Umber <br>#BF5100</p></div>
+                        <div class="colorset froth"><p>Ocean Froth <br> #377F9A</p></div>
+                        <div class="colorset mustard"><p>Mustard <br>#B3822E</p></div>
+                        <div class="colorset coolgray"><p>Cool Gray <br>#4C5769</p></div>
+                        </div>
+                </div>
+                    <div class="use">
+                        <div class="samples col-12">
+                                            <h2>Usage</h2>
+        <p>Color samples - Use for overall theme cohesion, headings and backgrounds for page elements. </p>
+                            <div class="deepTeal section-border colorsamp col-1">
 
-      <aside class="col-2 sidenav" id="sidebar">
-        <h1>Contents</h1>
-        <ul class="sidebuttons">
-          <li><a href="#colorProps">Colors</a></li>
-          <li><a href="#links">Links</a></li>
-          <li><a href="#typography">Typography</a></li>
-          <li><a href="#links">Heading Styles</a></li>
-          <li><a href="#links">Icons</a></li>
-          <li><a href="#links">Buttons</a></li>
-          <li><a href="#links">Images</a></li>
-        </ul>
-      </aside>
+                            </div>
 
-      <main class="col-10" id="primary">
-        <section id="colorProps">
-          <h1>Colors</h1>
+                            <div class="col-1 oceanTeal colorsamp section-border">
 
-            <p>When used strategically, color is a powerful tool for communicating a brand's message and creating brand recognition. The colors below represent the sites theme and functionality.</p>
+                            </div>
 
-          <div class="section-border">
-            <div id="colors">
-              <div class="colorset deepTeal"><p>Deep Teal <br>#012E40</p></div>
-              <div class="colorset oceanTeal"><p>Ocean <br>#024959</p></div>
-              <div class="colorset medTeal"><p>Medium Teal <br>#026773</p></div>
-              <div class="colorset liteTeal"><p>Lite Teal <br>#3CA6A6</p></div>
-              <div class="colorset daySand"><p>Day Sand <br>#F2E3D5</p></div>
-            </div>
-            <div id="alertColors">
-              <div class="colorset yelocher"><p>Yellow Ocher <br>#F2B13F</p></div>
-              <div class="colorset burntumber"><p>Burnt Umber <br>#BF5100</p></div>
-              <div class="colorset froth"><p>Ocean Froth <br> #377F9A</p></div>
-              <div class="colorset mustard"><p>Mustard <br>#B3822E</p></div>
-              <div class="colorset coolgray"><p>Cool Gray <br>#4C5769</p></div>
-            </div>
-            </div>
-            <div class="use">
-                  <div class="samples col-12">
-                                      <h2>Usage</h2>
-<p>Color samples - Use for overall theme cohesion, headings and backgrounds for page elements. </p>
-                      <div class="col-1 deepTeal section-border">
+                            <div class="col-1 medTeal colorsamp section-border">
 
-                      </div>
+                            </div>
 
-                      <div class="col-1 oceanTeal section-border">
+                            <div class="col-1 liteTeal colorsamp section-border">
 
-                      </div>
+                            </div>
 
-                      <div class="col-1 medTeal section-border">
+                            <div class="col-1 daySand colorsamp section-border">
+                            </div>
 
-                      </div>
+                            </div>
+                                                
+                        <div class="samples col-12">
+                            <p>Color samples - Use for fonts, alerts, buttons, lists and icons. 
+                            </p>
 
-                      <div class="col-1 liteTeal section-border">
+                            <div class="col-1 yelocher section-border colorsamp">
 
-                      </div>
+                            </div>
 
-                      <div class="col-1 daySand section-border">
-                      </div>
+                            <div class="col-1 burntumber section-border colorsamp">
 
+                            </div>
+
+                            <div class="col-1 froth section-border colorsamp">
+
+                            </div>
+
+                            <div class="col-1 mustard section-border colorsamp">
+
+                            </div>
+
+                            <div class="col-1 coolgray section-border colorsamp">
+
+                            </div>
+                            
+                        </div>
                     </div>
-                                          
-                  <div class="samples col-12">
-                    <p>Color samples - Use for fonts, alerts, buttons, lists and icons. 
-                    </p>
+                </section>
+  <!--Second Section Links-->
+                <section id="links">
+                <h1> Links </h1>
+                <p>Link styles are contrasting and bright and do not solely reply on color to determine their use. </p>
+                    <div class="section-border">
+                        <div class="pseudoTable col-2">
+                            <p class="drk-text bold">Link Styles Light</p>
+                            <ul class="listLinks">
+                                <li class="alink">a:link</li>
+                                <li class="avisited">a:visited</li>
+                                <li class="ahover">a:hover</li>
+                                <li class="afocus"> a:focus</li>
+                                <li class="aactive">a:active</li>
+                            </ul>
+                        </div>
+                        <div class="pseudoTable col-2">
+                            <p class="drk-text bold">Color Name</p>
+                            <ul class="listLinks">
+                                <li>Froth</li>
+                                <li>Burnt Umber</li>
+                                <li>Lite Teal</li>
+                                <li>Froth</li>
+                                <li>Medium Teal</li>
+                            </ul>
+                        </div>
+                        <div class="pseudoTable col-2">
+                            <p class="drk-text bold">Decoration</p>
+                            <ul class="listLinks">
+                                <li>none</li>
+                                <li>none</li>
+                                <li>underlined</li>
+                                <li>dotted outline</li>
+                                <li>none</li>
+                            </ul>
+                        </div>
+                        <div class="pseudoTable col-2 darktbl">
+                            <p class=" bold lt-text">Link Styles dark</p>
+                            <ul class="listLinks">
+                                <li class="alink-drk">a:link</li>
+                                <li class="avisited">a:visited</li>
+                                <li class="ahover-drk">a:hover</li>
+                                <li class="afocus-drk"> a:focus</li>
+                                <li class="aactive">a:active</li>
+                            </ul>
+                        </div>
+                        <div class="pseudoTable col-4 darktbl">
+                            <p class="lt-text bold">Color Name</p>
+                            <ul class="listLinks yel-text">
+                                <li>Froth</li>
+                                <li>Burnt Umber</li>
+                                <li>Lite Teal</li>
+                                <li>Froth</li>
+                                <li>Medium Teal</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="use">
+                        <div class="samples col-12">
+                            <h2>Usage</h2>
+                            <p><span class="bold">Example:</span> Sarah wants to sign up for <a href="https://www.codecademy.com/learn">Codecademy </a>to learn a new skill.</p>
+                            
+                        </div>
+                    </div>
+                </section>
+  <!--Third Section Fonts-->
+                <section id="fontStyles">
+                <h1> Typography </h1>
+                <div class="section-border">
+                    <div class="col-6">
+                        <div class="card">  
+                        <p class="center bold large classy">ARVO</p>
+                        
+                        <p class="center large classy">serif</p>
+                        <p class="center">Regular 400</p> 
+                        <p class="center italic">Regular Italic</p> 
+                        <p class="center bold">Bold</p> 
+                        <br>
+                        <br>
+                        </div>
+                        </div>
+                        <div class="col-6">
+                        <div class="card">  
+                        <p class="center bold large"> LATO</p>
+                    
+                        <p class="center large">sans-serif</p>
+                    
+                        <p class="center thin">Thin 100</p>
+                    
+                        <p class="center light">Light 300</p>
+                    
+                        <p class="center">Regular 400</p>                  
+                    
+                        <p class="center bold">Bold 700</p>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+  <!--Fourth Section Headings and Paragraphs-->
+                <section id="headings">
+                <h1>Heading and Paragraph Styles </h1>
+                <p>Our design features larger heading styles that command attention. Our paragraph styles are done in a complimentary sans-serif font for maximum readibility. The blockquote is styled to preset with commas wrapped around the quote.</p>
+                    <div class="section-border">
+                        <div class="col-12">
+                        <h1>This is an H1 Heading.</h1>
+                        <h2>This is an H2 Heading.</h2>
+                        <h3>This is an H3 Heading.</h3>
+                        <h4>This is an H4 Heading.</h4>
+                        <h5>This is an H5 Heading.</h5>
+                        <h6>This is an H6 Heading.</h6>
+                        <p>This is a paragraph.</p>
+                        <blockquote>This is a blockquote</blockquote>
+                    </div>
+                    </div>
+                </section>
+  <!--Fifth Section Icons-->
+                <section id="icons">
+                <h1> Icons </h1>
+                    <div class="section-border">
+                        <div class="col-1">
+                        <span class="material-symbols-outlined">
+        star
+        </span>
+        <span class="material-symbols-outlined">
+        grade
+        </span>
+        <span class="material-symbols-outlined">
+        share
+        </span>
+                        </div>
+                    </div>
+                </section>
+  <!--Sixth Section Buttons-->
+                <section id="buttons">
+                <h1> Buttons </h1>
+                <p>Three classic button styles are utilized, flat buttons, flat outlined buttons and flat pill shaped buttons. The classes used are: </p>
+            <ul>
+                    <li> <span class="code"> .flat-button-teal</span></li>
+                    <li><span class="code">.flat-button-yel</span></li>
+                    <li><span class="code">.outline-button-teal</span></li>
+                    <li><span class="code">.outline-button-yel</span></li>
+                    <li><span class="code">.pill-button-teal</span></li>
+                    <li><span class="code">.pill-button-yel</span></li>
+                </ul>
+                <p> Along with two size classes: <span class="code">.lg and .sm</span></p>
+                    <div class="section-border">
+                        <div id="flat-buttons">
+                        <p class="bold">Flat Buttons Example:</p>
+                            <button class="flat-button-teal lg-button">SAMPLE</button>
+                            <button class="flat-button-yel lg-button">SAMPLE</button>
 
-                      <div class="col-1 yelocher section-border">
+                            <button class="flat-button-teal sm-button">SAMPLE</button>
+                            <button class="flat-button-yel sm-button">SAMPLE</button>
+                    </div>
+                    <div id="outline-buttons">
+                        <p class="bold">Outlined Buttons Example:</p>
+                            <button class="outline-button-teal lg-button">SAMPLE</button>
+                            <button class="outline-button-yel lg-button">SAMPLE</button>
 
-                      </div>
+                            <button class="outline-button-teal sm-button">SAMPLE</button>
+                            <button class="outline-button-yel sm-button">SAMPLE</button>
+                    </div>
+                    <div id="pill-buttons">
+                        <p class="bold">Pill Buttons Example:</p>
+                            <button class="pill-button-teal lg-button">SAMPLE</button>
+                            <button class="pill-button-yel lg-button">SAMPLE</button>
 
-                      <div class="col-1 burntumber section-border">
-
-                      </div>
-
-                      <div class="col-1 froth section-border">
-
-                      </div>
-
-                      <div class="col-1 mustard section-border">
-
-                      </div>
-
-                      <div class="col-1 coolgray section-border">
-
-                      </div>
-                      
-                 </div>
-              </div>
-        </section>
-
-        <section id="listStyles">
-
-        </section>
-
-        <section id="links">
-          <h1> Links </h1>
-              <div class="section-border">
-                  <div class="pseudoTable col-2">
-                     <p class="drk-text bold">Link Styles Light</p>
-                      <ul class="listLinks">
-                          <li class="alink">a:link</li>
-                          <li class="avisited">a:visited</li>
-                          <li class="ahover">a:hover</li>
-                           <li class="afocus"> a:focus</li>
-                          <li class="aactive">a:active</li>
-                      </ul>
-                  </div>
-                  <div class="pseudoTable col-2">
-                     <p class="drk-text bold">Color Name</p>
-                      <ul class="listLinks">
-                          <li>Froth</li>
-                          <li>Burnt Umber</li>
-                          <li>Lite Teal</li>
-                           <li>Froth</li>
-                          <li>Medium Teal</li>
-                      </ul>
-                  </div>
-                  <div class="pseudoTable col-2">
-                     <p class="drk-text bold">Decoration</p>
-                      <ul class="listLinks">
-                          <li>none</li>
-                          <li>none</li>
-                          <li>underlined</li>
-                           <li>dotted outline</li>
-                          <li>none</li>
-                      </ul>
-                  </div>
-                   <div class="pseudoTable col-2 darktbl">
-                     <p class=" bold lt-text">Link Styles dark</p>
-                      <ul class="listLinks">
-                          <li class="alink-drk">a:link</li>
-                          <li class="avisited">a:visited</li>
-                          <li class="ahover-drk">a:hover</li>
-                           <li class="afocus-drk"> a:focus</li>
-                          <li class="aactive">a:active</li>
-                      </ul>
-                  </div>
-                  <div class="pseudoTable col-4 darktbl">
-                      <p class="lt-text bold">Color Name</p>
-                      <ul class="listLinks yel-text">
-                          <li>Froth</li>
-                          <li>Burnt Umber</li>
-                          <li>Lite Teal</li>
-                           <li>Froth</li>
-                          <li>Medium Teal</li>
-                      </ul>
-                  </div>
-              </div>
-              <div class="use">
-                  <div class="samples col-12">
-                      <h2>Usage</h2>
-                      <p><span class="bold">Example:</span> Sarah wants to sign up for <a href="https://www.codecademy.com/learn">Codecademy </a>to learn a new skill.</p>
-                      
-                  </div>
-              </div>
-        </section>
-
-        <section id="fontStyles">
-          <h1> Typography </h1>
-              <div class="col-6">
-                <div class="card">  
-                  <p class="center bold large classy">ARVO</p>
-                  
-                  <p class="center large classy">serif</p>
-                  <p class="center">Regular 400</p> 
-                  <p class="center italic">Regular Italic</p> 
-                  <p class="center bold">Bold</p> 
-                  <br>
-                  <br>
+                            <button class="pill-button-teal sm-button">SAMPLE</button>
+                            <button class="pill-button-yel sm-button">SAMPLE</button>
+                    </div>
+                    </div>
+                </section>
+  <!--Seventh Section Images-->
+                <section id="images">
+                <h1> Images </h1>
+               <p> Image classes: </p>
+               <ul>
+                    <li><span class="code">.thumbnail</span></li>
+                    <li><span class="code">.thumb-sm</span></li>
+                    <li><span class="code">.thumb-lg</span></li>
+                </ul>
+                    <div class="section-border">
+                        <div class="col-3">
+                           <img class="thumb-sm" src="./images/woman.jpeg" alt="Woman artistic profile">
+                        </div>
+                        <div class="col-3">
+                            <img class="thumbnail" src="./images/woman.jpeg" alt="Woman artistic profile">
+                         </div>
+                         <div class="col-3">
+                            <img class="thumb-lg" src="./images/woman.jpeg" alt="Woman artistic profile">
+                         </div>
+                    </div>
+                </section>
+            </main>
+<!--Bottom Sidebar Resources-->
+            <aside class="col-12" id="resources">
+                <h1 class="text-lt">Resources</h1>
+                <div class="col-3">
+                    <div class="company-icon">
+                        <img src="./images/bootstrap-logo.png" alt="Bootstrap icon" title="Bootstrap" class="logos">
+                    </div>
+                    <a class="company" href="#"><p class="center">Bootstrap<span class="material-symbols-rounded">
+                        link
+                        </span></p></a>
                 </div>
+                <div class="col-3">
+                    <div class="company-icon">
+                        <img src="./images/AwzUxnVf_400x400.png" alt="MDN Web Docs icon" title="MDN Web Docs" class="logos">
+                    </div>
+                    <a class="company" href="#"><p class="center">MDN Web Docs<span class="material-symbols-rounded">
+                        link
+                        </span></p></a>
                 </div>
-                <div class="col-6">
-                <div class="card">  
-                  <p class="center bold large"> LATO</p>
-               
-                  <p class="center large">sans-serif</p>
-             
-                  <p class="center thin">Thin 100</p>
-               
-                  <p class="center light">Light 300</p>
-              
-                  <p class="center">Regular 400</p>                  
-              
-                  <p class="center bold">Bold 700</p>
+                <div class="col-3">
+                    <div class="company-icon">
+                        <img src="./images/google-fonts-logo.png" alt="Google Fonts icon" title="Google Fonts" class="logos">
+                    </div>
+                    <a class="company" href="#"><p class="center">Google Fonts<span class="material-symbols-rounded">
+                        link
+                        </span></p></a>
                 </div>
-              </div>
-              <div class="col-12">
-                  <h1>This is an H1 Heading.</h1>
-                  <h2>This is an H2 Heading.</h2>
-                  <h3>This is an H3 Heading.</h3>
-                  <h4>This is an H2 Heading.</h4>
-                  <h5>This is an H2 Heading.</h5>
-                  <h6>This is an H2 Heading.</h6>
-                  <p>This is a paragraph</p>
-                  <blockquote>"This is a quote."</blockquote>
-               </div>
-        </section>
-        <section id="headings">
-          <h1>Header Styles </h1>
-              <div class="section-border">
-                Type Face Examples
-              </div>
-        </section>
-        <section id="icons">
-          <h1> Icons </h1>
-              <div class="section-border">
-                <div class="col-1">
-                  <span class="material-symbols-outlined">
-star
-</span>
-<span class="material-symbols-outlined">
-grade
-</span>
-<span class="material-symbols-outlined">
-share
-</span>
+                <div class="col-3">
+                    <div class="company-icon">
+                        <img src="./images/w3c-logo-black-and-white.png" alt="W3 Consortium icon" title="W3 Consortium" class="logos">
+                    </div>
+                    <a class="company" href="#"><p class="center">W3 Consortium <span class="material-symbols-rounded">
+                        link
+                        </span></p></a>
                 </div>
-              </div>
-        </section>
-        <section id="buttons">
-          <h1> Buttons </h1>
-              <div class="section-border">
-          
-              </div>
-        </section>
-        <section id="images">
-          <h1> Images </h1>
-              <div class="section-border">
-                Type Face Examples
-              </div>
-        </section>
-      </main>
-       <aside class="col-12" id="resources">
-                Resources
-      </aside>
-      <footer class="col-12" id="foot-main">
-      </footer>
 
-    </div>
+            </aside>
+<!--Footer-->
+            <footer class="col-12" id="foot-main">
+                <div id="solcial">
+                    <div class="footer-col col-4">
+                    </div>
+                    <div class="footer-col col-4">
+                    </div>
+                    <div class="footer-col col-4">
+                    </div>
+                </div>
+                <div id="credits" class="col-12">Copyright &copy; 2022 |  Miki Thibodeaux</div>
+           
+            </footer>
+      </div> <!--inner-wrap-->
+    </div><!--wrap-->
 
 <script>
 $(document).ready(function(){
@@ -291,6 +390,15 @@ $(document).ready(function(){
     } // End if
   });
 });
+
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
 </script>
 
 </body>
