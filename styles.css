@@ -358,13 +358,15 @@ body {
   }
   
   .sidenav ul li {
+    position: relative;
+    display: inline-block;
     padding-bottom: 10px;
     padding-top: 10px;
     padding-left: 25px;
+    padding-right: 25px;
   }
   
   .sidenav ul li a {
-    display: block;
     color: #F2E3D5;
     text-decoration: none;
   }
@@ -384,6 +386,10 @@ body {
   
   .sidenav ul li a:active {
     color: #3CA6A6;
+  }
+
+  .sidenav ul li a .active {
+    background-color: #012E40;
   }
   
   
@@ -529,29 +535,24 @@ body {
     font-weight: 700;
     text-decoration: underline;
   }
-  
-  #resources {
-    background-color: #3CA6A6;
-  }
-  
-  /*Footer*/
-  #foot-main{
-    min-height: 150px;
-  }
 
-  /*Subheading -- Credits*/
+    /* Subheading -- Icons*/
 
-  #credits {
-  display: block;
-  position: relative;
-  color: #F2E3D5;
-  text-align: center;
-  }
+    .icon-set li{
+      display: inline;
+      margin: 8px;
+      font-size: 40px;
+    }
+  
   
   /* Resources ==========*/
 
-  #resources h1 {
-      color: #F2E3D5;
+  #resources {
+    background-color: #3CA6A6;
+  }
+
+  #resources h2 {
+      margin-left: px;
   }
 .company-icon {
     width: 40%;
@@ -580,10 +581,38 @@ body {
     color: #F2B13F;
   }
 
+  /*Footer*/
+   footer {
+    width: 100%;
+    overflow: hidden;
+    clear: both;
+   }
+
+
+  #foot-main{
+    min-height: 150px;
+  }
+
+  .soc-icons {
+    width: 45%;
+    padding-top: 45px;
+    padding-bottom: 25px;
+  }
+
+  /*Subheading -- Credits*/
+
+  #credits {
+  display: block;
+  position: relative;
+  color: #F2E3D5;
+  text-align: center;
+  }
+  
+
 
   
   /*Non-Specific Styles (helper classes)==========*/
-  
+
   .lt-text {
     color: #F2E3D5;
   }
@@ -684,10 +713,6 @@ body {
 
   /* Several image styles to choose from */
 
-  .photograph {
-
-  }
-
   .thumbnail {
     display: block;
     position: relative;
@@ -747,6 +772,7 @@ body {
         float: left;
         padding: 15px;
       }
+
       
       @media only screen and (max-width: 768px) {
         /* For mobile phones: */
@@ -817,6 +843,11 @@ body {
           width: 50%; 
   
   }
+  #resources h1 {
+    margin: 10PX auto;
+    text-align: center;
+
+}
   
   }
   
