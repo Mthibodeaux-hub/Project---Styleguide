@@ -401,6 +401,7 @@ body {
     overflow: hidden;
     padding: 0 25px 25px 25px;
     border-left: 1px dashed #026773;
+    border-right: 1px dashed #026773;
   }
   
   .section-border {
